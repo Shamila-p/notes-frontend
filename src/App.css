@@ -1,38 +1,85 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  background-color: black;
   min-height: 100vh;
+}
+
+.navbar {
+  min-height: 10vh;
+  border-bottom: 1px solid silver;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between; /* Add this to align items on both ends */
+  padding: 0 20px; /* Add some padding to the navbar */
 }
 
-.App-link {
-  color: #61dafb;
+.app-header {
+  color: yellow;
+  margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.note-button-container {
+  display: flex;
+  justify-content: flex-end; /* Align the button to the right */
+  padding: 10px 20px; /* Add some padding to the button container */
+}
+
+.note-button{
+  padding: 10px 26px;
+  background-color: yellow;
+  border-radius: 17px;
+}
+
+.note-button{
+  padding: 10px 26px;
+  background-color: yellow;
+  border-radius: 17px;
+}
+
+.note-button:hover{
+  cursor: pointer;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 45px auto;
+}
+
+/* Set the width of each card */
+.card {
+  width: calc(33.33% - 20px); /* 33.33% width minus 20px margin to fit three cards in a row */
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  margin: 10px;
+}
+.card-title {
+  margin: 0;
+  padding-bottom: 8px;
+}
+
+.card-content {
+  color: #555;
+}
+
+.card-date {
+  color: #888;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+}
+
+.edit-icon,
+.delete-icon {
+  cursor: pointer;
+  margin-left: 8px;
 }
